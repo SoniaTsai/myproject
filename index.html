@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Grayscale - Start Bootstrap Theme</title>
+    <title>個人作品集</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/profilecard.css" rel="stylesheet">
 
   </head>
 
@@ -28,21 +29,17 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">近期作品</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">過往作品</a>
             </li>
           </ul>
         </div>
@@ -53,55 +50,76 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+
+          <div class="card">
+            <img src="img/profile.png" alt="" style="width:30%; display:block; margin:auto; border-radius: 100px;">
+            <h3>蔡妙欣</h3>
+            <h6>靜宜大學資訊管理學系</h6>
+            <p class="title">個性：積極認真、勇於嘗試新事物</p>
+            <p class="title">專長：網頁UI設計、APP UI設計</p>
+            <p class="title">作品風格：色調偏灰暗、使用多種CSS或JS Animation</p>
+            <a href="#about" class="btn js-scroll-trigger">近期作品一覽 <i class="fa fa-chevron-down"></i></a>
+          </div>
+          
         </div>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center">
+    <section id="about" class="projects-section bg-light">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-            <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+        <!-- wiki project -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/projectwiki.png" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>MARIKINonline4遊戲攻略站(製作中)</h4>
+              <p class="text-black-50 mb-0">
+                使用工具：HTML、CSS、Java Script<br/>
+                簡介：為MARIKINonline4這款RPG遊戲打造的專屬遊戲攻略網站。揮別以往對遊戲攻略站的既定印象，讓網站看起來更加生動活潑。<br/>
+                <a href="https://mo4unofficialwiki.github.io/" target="_blank">網站連結</a>
+              </p>
+            </div>
           </div>
         </div>
-        <img src="img/ipad.png" class="img-fluid" alt="">
+        <!-- project 99 -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="img-fluid mb-3 mb-lg-0" src="img/project99.png" alt="">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>在那之後的九十九天企劃網站</h4>
+              <p class="text-black-50 mb-0">
+                使用工具：HTML、CSS、Java Script<br/>
+                簡介：與喜愛TRPG的同好們共同策畫「在那之後的九十九天」企劃，網站主體風格以類似與RPG遊戲人物對話的形式來引導玩家遊玩企劃。<br/>
+                <a href="https://soniatsai.github.io/project99/index.html" target="_blank">網站連結</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section bg-light">
       <div class="container">
-
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project One Row -->
+        <!-- Project Graduation -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/toj297uNWrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Misty</h4>
-                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                  <h4 class="text-white">畢業專題 - 智慧床系統</h4>
+                  <p class="mb-0 text-white-50">
+                    使用工具：Node.js、Telegram bot<br/>
+                    簡介：為方便實際掌握長者的生理狀態而打造的智慧床系統。藉由獲得上下床訊息推測該位長者是否需要任何幫助，方便獨居長者的家屬或老人安養中心之護理人員隨時掌握年長者的健康狀況。
+                  </p>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -109,17 +127,20 @@
           </div>
         </div>
 
-        <!-- Project Two Row -->
+        <!-- Project Restaurant -->
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+            <img class="img-fluid" src="img/projectR.png" alt="">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                  <h4 class="text-white">文學食旅，無所味懼</h4>
+                  <p class="mb-0 text-white-50">
+                    使用工具：HTML、CSS、PHP、Laravel<br/>
+                    簡介：專為位於台中文學館的櫟社文學餐廳建立的餐廳網站。內容除了餐廳菜單外，還可閱讀每道菜色背後的文學家故事增廣見聞。
+                  </p>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
@@ -127,91 +148,29 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Signup Section -->
-    <section id="signup" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-            </form>
-
+        <!-- Project Sport -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/projectSport.png" alt="">
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Email</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">靜宜大學放心動APP</h4>
+                  <p class="mb-0 text-white-50">
+                    使用工具：Android Studio<br/>
+                    簡介：希望學生能夠藉由遊戲性的完成任務獲得每日所需運動量而研發的APP。
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Phone</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+1 (555) 902-8832</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
         </div>
 
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; Your Website 2018
-      </div>
-    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
