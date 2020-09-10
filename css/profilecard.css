@@ -3,7 +3,10 @@
   max-width: 400px;
   margin: auto;
   text-align: center;
-  background-color: grey;
+  background: -webkit-linear-gradient(grey,#999);
+  background: -o-linear-gradient(grey,#999);
+  background: -moz-linear-gradient(grey,#999);
+  background: linear-gradient(grey,#999);
   padding-top: 20px;
 }
 
